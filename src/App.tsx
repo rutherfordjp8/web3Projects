@@ -1,8 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import React from "react";
+import Web3 from "web3";
+import logo from "./logo.svg";
 
 function App() {
+  const web3 = new Web3(Web3.givenProvider || "http://localhost:7545");
   return (
     <div className="App">
       <header className="App-header">
